@@ -23,7 +23,7 @@ class Song
   end
 
 
-  def artists
+  def self.artists
     @@artists
   end
 
