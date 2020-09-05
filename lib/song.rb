@@ -1,3 +1,6 @@
+require 'pry'
+
+
 class Song
 
   attr_reader :name, :artist, :genre
@@ -17,6 +20,7 @@ class Song
 
   def count
     @@count
+    binding.pry
   end
 
   def artists
