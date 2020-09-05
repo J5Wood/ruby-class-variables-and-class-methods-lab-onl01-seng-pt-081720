@@ -45,7 +45,18 @@ class Song
       genre_count
     end
 
-
+    def self.artist_count
+      song_count = {}
+        @@artists.map do |artist|
+          if song_count.include?(artist)
+            counter = song_count[artist]
+            counter += 1
+            song_count[artist] = counter
+          else
+            song_count[artist] = 1
+          end
+        end
+    end
 
 
 end
