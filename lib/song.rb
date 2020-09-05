@@ -35,7 +35,7 @@ class Song
     new_hash = {}
     @@genres.each do |x|
         if new_hash.include?(x)
-          new_hash[x] = +1
+          new_hash[x] => +1
         else
           new_hash[x] = 1
         end
